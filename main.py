@@ -11,6 +11,13 @@ screen.tracer(0)                       # Turn off animation
 
 snake = Snake()
 
+screen.listen()                        # Listen for key press
+
+screen.onkey(fun=snake.up, key="Up")    # Move up
+screen.onkey(fun=snake.down, key="Down")    # Move down
+screen.onkey(fun=snake.left, key="Left")    # Move left
+screen.onkey(fun=snake.right, key="Right")    # Move right
+
 game_is_on = True
 
 while game_is_on:
