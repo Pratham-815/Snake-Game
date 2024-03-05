@@ -1,6 +1,7 @@
-from turtle import Screen, Turtle
+from turtle import Screen
 from snake import Snake
 import time
+from food import Food
 
 screen = Screen()
 screen.setup(width=600, height=600)
@@ -10,6 +11,7 @@ screen.title("Snake Game")             # Set title
 screen.tracer(0)                       # Turn off animation
 
 snake = Snake()
+food = Food()
 
 screen.listen()                        # Listen for key press
 
